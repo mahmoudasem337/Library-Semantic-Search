@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///"
+     xml:base="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Library="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#authoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#authoredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#borrowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#borrowedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#fanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#fanOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#hasSubject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#interestedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#interestedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#publishedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#specializesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#specializesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Publisher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#AI_Sub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#AI_Sub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#CNN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#CNN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <Library:authoredBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Kerolos"/>
+        <Library:hasSubject rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#AI_Sub"/>
+        <Library:publishedBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Kerolos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Kerolos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Math0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Math0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <Library:authoredBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Yassa"/>
+        <Library:borrowedBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader1"/>
+        <Library:hasSubject rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Science_Sub"/>
+        <Library:publishedBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Math1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Math1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <Library:authoredBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Yassa"/>
+        <Library:hasSubject rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Science_Sub"/>
+        <Library:publishedBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Publisher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Publisher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#RNN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#RNN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+        <Library:authoredBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Kerolos"/>
+        <Library:hasSubject rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#AI_Sub"/>
+        <Library:publishedBy rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Organization_B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Science_Sub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Science_Sub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Yassa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Yassa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If a reader frequently borrowed books by an author, they are a fan of that author</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#borrowedBy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#authoredBy"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#fanOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If an author has written at least two different books on the same subject, they specialize in that subject.</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Author"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#authoredBy"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#authoredBy"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b2"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#hasSubject"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b1"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#hasSubject"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b2"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#specializesIn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If a reader frequently accesses books on a subject, they are interested in that subject.</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Book"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Reader"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#Subject"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#borrowedBy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#hasSubject"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///b"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3/Library#interestedIn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/kerol_3obfacr/ontologies/2025/3///s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
